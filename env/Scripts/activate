@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\projects\newapp\env"
+VIRTUAL_ENV="D:\projects\roguelikes\roguelike\env"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
