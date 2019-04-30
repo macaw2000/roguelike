@@ -280,7 +280,7 @@ def main():
     show_main_menu = True
     show_load_error_message = False
 
-    main_menu_background_image = libtcod.image_load('menu_background.png')
+    main_menu_background_image = libtcod.image_load('airship.png')
 
     key = libtcod.Key()
     mouse = libtcod.Mouse()
