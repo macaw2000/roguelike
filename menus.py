@@ -50,14 +50,16 @@ def inventory_menu(con, header, player, inventory_width, screen_width, screen_he
 
 def main_menu(con, background_image, screen_width, screen_height):
     libtcod.image_blit_2x(background_image, 0, 0, 0)
-    # libtcod.image_blit_rect(background_image, 0, 0, 0, 320, 200, libtcod.BKGND_DEFAULT)
-
+    # libtcod.image_blit_rect(background_image, 0, 0, 0, 160, 100, libtcod.BKGND_LIGHTEN)
+    # libtcod.image_blit(background_image, 0, int(screen_width / 2), int(screen_height / 2), 
+    #                    libtcod.BKGND_LIGHTEN, 0.2, 0.2, 0.0)
 
     libtcod.console_set_default_foreground(0, libtcod.light_yellow)
-    libtcod.console_print_ex(0, int(screen_width / 2), int(screen_height / 2) - 4, libtcod.BKGND_NONE, libtcod.CENTER,
+    libtcod.console_print_ex(0, int(screen_width / 2), int(screen_height / 2) - 6, libtcod.BKGND_NONE, libtcod.CENTER,
                              'THE LOST AIRSHIP')
+    libtcod.console_set_default_foreground(0, libtcod.black)
     libtcod.console_print_ex(0, int(screen_width / 2), int(screen_height - 2), libtcod.BKGND_NONE, libtcod.CENTER,
-                             'By Jeremy')
+                             'By Jeremy Rule')
 
     menu(con, '', ['Play a new game', 'Continue last game', 'Quit'], 24, screen_width, screen_height)
 
